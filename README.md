@@ -6,7 +6,7 @@ so i created a small dummy data array wuth three elements
 so if you search delhi, lahore or berlin you get the data from the dummy data list
 The person who joined the call suggested to create a dummy data instead of waiting for my key to be activated
 
-so if you earch for delhi, berlin or lahore you get the response
+so if you search for delhi, berlin or lahore you get the response
 else you get an alert stating city not found
 i have added search functionaly both on search button and pressing enter while typing in the input
 used apexChart api for displaying chart
