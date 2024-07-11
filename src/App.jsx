@@ -1,7 +1,7 @@
 // https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
-// const API_KEY = "5eedc90b83cefc290a099b1fe8a867a5";
+const API_KEY = "5eedc90b83cefc290a099b1fe8a867a5";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import History from "./components/History";
 import Homepage from "./components/Homepage";
@@ -82,7 +82,7 @@ function App() {
   //default can be taken from browser location
   const [selectedCity, setSelectedCity] = useState({
     city: "Noida",
-    country: "In",
+    country: "India",
     time: "11am",
     day: "Friday",
     temp: 16,
@@ -110,11 +110,11 @@ function App() {
 
   // useEffect(() => {
   //   const fetchData = async () => {
-  //     await fetch(
+  //     const res = await fetch(
   //       `https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid=${API_KEY}`
-  //     )
-  //       .then((res) => res.json())
-  //       .then((data) => console.log(data));
+  //     );
+  //     const data = await res.json();
+  //     console.log(data.message);
   //   };
 
   //   fetchData();

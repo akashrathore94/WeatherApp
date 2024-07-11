@@ -70,7 +70,7 @@ function WeatherData({ selectedCity }) {
                 <p>{el.day}</p>
                 {el.maxtemp < 20 ? <MdSevereCold /> : <MdSunny />}
                 <p>
-                  {el.maxtemp}° | {el.minTemp}°{" "}
+                  {el.maxtemp}°C | {el.minTemp}°C
                 </p>
               </div>
             );

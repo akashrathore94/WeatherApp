@@ -42,7 +42,7 @@ function History({ historyArr }) {
             );
           })
         ) : (
-          <p className="searchHistory">no element searched yet</p>
+          <p className="searchHistory">No city searched yet</p>
         )}
       </div>
     </div>
